@@ -1,0 +1,808 @@
+body{
+    font-family: "Roboto", sans-serif;
+        color: rgba(47, 46, 65, 1);
+        line-height: 1.2;
+        letter-spacing: -0.02;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: 100%;
+    border-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background: url(../img/photo_2024-12-17_18-46-12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+header a{
+    color: white;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+}
+header .navigation .logo{
+    font-size: 30px;
+}
+
+header .navigation .links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-wrap: wrap;
+}
+header .navigation .links a{
+    text-transform: uppercase;
+}
+header .navigation .links a:hover{
+    color: #033273;
+    transition: 0.5s;
+}
+
+header .navigation .links a:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin-top: 10px;
+    opacity: 0;
+}
+header .navigation .links a:hover:after{
+    background-color: #033273;
+    margin-top: 5px;
+    opacity: 1;
+    transition:  0.5s;
+}
+
+ header .title{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ header .title h2{
+    margin-bottom: 50px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+ }
+
+ header .title h1 {
+    margin-bottom: 50px;
+    font-size: 57px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    line-height: 105px;
+    letter-spacing: -3px;
+}
+ header .title .line{
+    height: 2px;
+    width: 60px;
+    background-color: white;
+    margin-bottom: 50px;
+ }
+
+ header .title a {
+    padding: 12px 37px;
+    border: 2px solid white;
+    display: block;
+    margin-bottom: 150px;
+    border-radius: 14px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 300ms ease-in-out;
+}
+
+ header .title a:hover{
+    border-color:#033273;
+    color: #033273;
+    transition: 300ms ease-in-out;
+    background-color: #ffffff;
+ }
+
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    align-items: center;
+}
+
+ .section-title-template .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 77px 0px 20px 0px;
+}
+.section-title-template h3 {
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.section-title-template h2 {
+    font-size: 30px;
+    font-weight: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.section-title-template .line {
+    background-color: #6CACE3;
+    height: 2px;
+    width: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-self: center;
+}
+
+.section-title-template p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #999;
+    width: 100%;
+    text-align: center;
+}
+
+.section-grid {
+    margin-top: 10px;
+}
+ 
+.section-grid .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    padding-bottom: 2px;
+}
+
+.section-grid .grid .el{
+    background-size: cover;
+}
+
+.section-grid .grid .el:nth-child(1){
+    background-image: url(../img/1сл.jpg) ;
+    background-position: bottom;
+}
+.section-grid .grid .el:nth-child(2){
+    background-image: url(../img/2сл.jpg) ;
+    background-position: bottom;
+}
+.section-grid .grid .el:nth-child(3){
+    background-image: url(../img/niiis_03_graffiti_sedakov.jpg) ;
+}
+.section-grid .grid .el:nth-child(4){
+    background-image: url(../img/4сл.png) ;
+}
+.section-grid .grid .el:nth-child(5){
+    background-image: url(../img/ktnj.jpg) ;
+    grid-row: 1 / 3;
+    grid-column: 3;
+    background-position-x: center ;
+}
+.section-grid .grid .el:nth-child(6){
+    background-image: url(../img/55.jpg) ;
+}
+
+.section-grid .grid .el:nth-child(7){
+    background-image: url(../img/чтогдекогда.jpg) ;
+}
+ 
+.section-grid .grid .content{
+    background-image: linear-gradient(rgba(108, 172, 228, 0.8), rgba(2, 94, 161, 0.8));
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f8f8f8;
+    transition: .3s;
+}
+
+.section-grid .grid .content:hover{
+    opacity: 1;
+    transition: .5s;
+}
+
+
+
+
+
+
+.about-inst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 77px 0px 0px 0px;
+}
+
+.about-inst p{
+
+        font-size: 30px;
+        font-weight: 400;
+        color: #999;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .about-inst img {
+        max-width: 100%; /* Изображение не будет шире своего контейнера */
+        height: auto;     /* Высота будет автоматически подстраиваться под ширину, сохраняя пропорции */
+        padding: 40px 0;  /* Сохраняем ваши отступы */
+      }
+      
+      
+
+
+    .pod1 h2 {
+        margin-left: 350px;
+        margin-top: -312px;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .podrezdeleniy {
+        height: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+
+    
+
+.block2 .pod1 h2{
+    font-size: 26px;
+  
+  }
+
+  .podrezdeleniy a {
+    background-color: #6CACE3;
+    border: none;
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.relative-container {
+    position: relative; /*  Теперь блок2 будет позиционироваться относительно этого */
+  }
+  
+  .block2 {
+      position: absolute; /*  или relative, в зависимости от нужного позиционирования */
+      font-weight: bold;
+      font-style: italic;
+      cursor: pointer;
+      font-style: unset; 
+  }
+  
+  .photoimg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.imgphoto {
+    display: flex;    /* Убрал flex-wrap отсюда */
+    flex-direction: column; /* Выравнивание текста под фото */
+    width: 250px; /* Ширина одного блока с фото */
+    margin: 10px; /*  Добавил отступы между блоками */
+    box-sizing: border-box; /*  Чтобы отступы не влияли на общую ширину */
+}
+
+.imgphoto img {
+    width: 100%; /*  Изображение занимает всю ширину своего контейнера */
+    height: auto; /* Сохранение пропорций */
+    display:block; /* Убирает лишний пробел снизу */
+}
+
+.imgphoto p {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.section-title-template {
+    padding: 72px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+  
+  .banner {
+    width: auto;
+    height: 700px;
+    margin: 70px auto;
+    background-color: #033273;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+  
+  .banner img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: blur(1px);
+    animation: smoothZoom 10s ease-in-out infinite alternate;
+    padding: 0px 10px;
+}
+  
+  @keyframes smoothZoom {
+    0% {
+      transform: scale(1);
+      filter: blur(1px);
+    }
+    50% {
+      transform: scale(1.1);
+      filter: blur(0px);
+    }
+    100% {
+      transform: scale(1);
+      filter: blur(1px);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  .headerr {
+    font-size: 19px;
+    color: #075EA0;
+    margin: 40px 0 15px 0;
+    display: inline-block;
+}
+  
+  .feedback-input {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #6CACE3;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px;
+    border: 1px solid white;
+    border-bottom: 1px dotted #6CACE3;
+    width: 90%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.submit-button {
+    font-family: Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    background-color: white;
+    color: #6CACE3;
+    font-size: 15px;
+    margin: 25px 0 30px 0;
+    padding: 10px 0;
+    width: 130px;
+    border: 2px solid #6CACE3;
+    border-radius: 14px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+
+.page {
+    width: auto;
+    background: white;
+    border: 1px solid #075EA0;
+    border-radius: 14px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+  .contact-section {
+background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px; 
+    width: 80%; 
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.contact-image {
+    width: 40%;
+    height: auto;
+    margin-right: 20px; 
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-button {
+    background-color: #6CACE3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); 
+    color: #6CACE3; 
+}
+
+.contact-text {
+    margin-top: 20px;
+    font-style: italic;
+    text-align: center;
+    color: #075EA0;
+    font-size: 19px;
+}
+
+
+
+    .section-title-templatee h2 {
+        font-size: 30px;
+        font-weight: 30px;
+        color: #333;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .contact-image {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .contact-text{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1021px)  {
+    header .navigation .links a {
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 698px)  {
+
+    header .navigation {
+        display: flex;
+        padding-top: 35px;
+        flex-direction: column;
+    }
+    header .navigation .links {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        flex-wrap: wrap;
+        padding-left: 24px;
+        margin-top: 29px;
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 830px)  {
+
+header .title h1 {
+    margin-bottom: 50px;
+    font-size: 39px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    line-height: 105px;
+    letter-spacing: -3px;
+}
+}
+
+@media (max-width: 637px)  {
+
+.about-inst p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #999;
+    width: 100%;
+    text-align: center;
+}
+}
+
+@media (max-width: 500px)  {
+
+header .title h1 {
+    margin-bottom: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    line-height: 44px;
+    letter-spacing: 0px;
+
+
+
+
+    .links{
+        display: flex;/* технология флексбокс */
+        align-items: center; /* выравнивание по центру */
+        justify-content: center; /* выравнивание по центру */
+        background-color: #e38ec9;
+        width: 100vw; /* ширина блока меню */
+        z-index: 10;/* слой ниже кнопки */
+          position: fixed; /* блок зафиксирован */
+        left: -100vw;/* скрывание блока с меню */
+          top: 0; /* позиция от левого верха */
+        transition: all 0.5s;/* плавное выдвижение блока */
+          opacity: .95;/* блок имеет прозрачность */
+      }
+    /* Активный класс меню видимое */
+    .links{
+            left: 0; /* блок с меню видимый */
+    }
+    /* Стилизация списка меню */
+    ul {
+        list-style: none; /* убрать маркеры */
+        padding: 0;
+        margin-top: 60px;
+        height: 100vh; /* блок занимает всю высоту браузера */
+    }
+    /* Стилизация ссылок меню */
+    a{
+        display: block; /* из строчного в блочный */
+        color: #6f2d35;
+        line-height: 50px;
+        text-decoration: none;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        transition: all 0.3s;
+        width: 100vw; /* блоки с ссылками на всю ширину */
+        display: flex;
+        justify-content: center; /* выравнивание по центру */
+    }
+    /* Эффект наведения мыши на ссылки */
+    a:hover{
+        background-color: #efc5fa;
+        width: 100vw;
+    }
+}}
+
+.map-container {
+    height: 400px;
+    width: auto;
+    position: relative;
+    transition: opacity 0.3s ease;
+  }
+  
+  .map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .map-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0; /* Скрыто по умолчанию */
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    font-size: 58px;
+  }
+  
+  .map-container:hover {
+    opacity: 0.7;
+  }
+  
+  .map-container:hover .map-image {
+    opacity: 0.4;
+  }
+  
+  .map-container:hover .map-overlay {
+    opacity: 1; /* Появляется при наведении */
+  }
+
+
+  .footer {
+    background: #033273;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: 125px;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: #f8f8f8;
+    font-size: 17px;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: #f8f8f8;
+    transition: 0.5s;
+    display: inline-block; /* Important for border to work correctly */
+    padding: 5px 10px; /* Add some padding for better border visibility */
+    border-radius: 5px; /* Optional: rounded borders */
+}
+
+.footer .row a:hover {
+    color: #075EA0;
+    border: 2px solid #075EA0; /* Add border on hover */
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
+
+.cardi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 408px;
+    height: 300px;
+    background-image: url(../img/токарь.png);
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    transition: transform 0.3s;
+    overflow: hidden;
+    border-radius: 14px;
+}
+.tokar { background-image: url(../img/токарь.png); }
+   .welder { background-image: url(../img/); }
+   .mechanic { background-image: url(../img/прогер.png); }
+   .electrician { background-image: url(../img/инженер.png); }
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.card-contenty {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 40px;
+}
+.btn:hover {
+    background-color: #033273;
+}
+
+
+
+
+.btin {
+    padding: 14px 53px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 40px;
+    font-size: 20px;
+}
